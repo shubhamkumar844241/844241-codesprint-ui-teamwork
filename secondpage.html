@@ -1,0 +1,295 @@
+
+<html>
+<head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <!---------css------------------------------------------------------->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<style>
+     img {
+  border-radius: 50%;
+  vertical-align: middle;
+  height: auto;
+  width: 100%;
+}
+           .head{
+background-color: #838395;
+           }
+        .header{
+            display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+        }
+        .main {
+  margin-left: 160px; 
+  font-size: 28px; 
+  padding: 0px 10px;
+}
+h1{
+    text-decoration: underline;
+    padding: 0 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    font-size: 20px;
+}
+label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+input[type=number] {
+  width: 35px;
+}
+fieldset{
+    margin-top: 30px;
+    margin-left: 20px;
+    border: 2px solid #000;
+}
+body{
+    background-color: #838395;
+    margin-left: 20px;
+}
+
+</style>
+
+
+
+
+
+
+<!----------------------------------js----------------------------------------->
+<!-------------------------------------------------------------------------------------->
+    
+    <script src="second.js"></script>
+</head>
+<body>
+    <div class="head">
+        <div class="header">
+
+    <img src="logo3.jpg" alt="Logo" style="width:180px">
+        </div>
+    </div>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+<ul class="navbar-nav">
+
+<li class="nav-item active">
+  
+<a class="nav-link" href="MainFrame.html">Home</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="mainframe1.html">Place Appointment</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#">View Appointment</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="contact1.html">Contact Us</a>
+</li>
+</ul>
+</nav>
+<div id="user">
+    <form id="myForm">
+        <br>
+        <h1>Registration Form :-</h1>
+        <h2>USERNAME :-</h2>
+        <input type="text" id="fname" name="firstname" placeholder="FIRST NAME HERE">
+
+        <input type="text" id="lname" name="lastname" placeholder="LAST NAME HERE">
+       
+        <h2>AGE :-</h2>
+        <input id="age" placeholder="AGE HERE">
+        <br>
+    <h2>EMAIL :-</h2>
+     <input type="text" id="email" name="emailid" placeholder="EMAIL HERE">
+     
+<!------------------------------------------mobile------------------------------------->
+      
+<br>
+
+<h2>MOBILE NUMBER :-</h2>
+<input id="codeBox1" type="number" maxlength="1" onkeyup="onKeyUpEvent(1, event)" onfocus="onFocusEvent(1)"/>
+      <input id="codeBox2" type="number" maxlength="1" onkeyup="onKeyUpEvent(2, event)" onfocus="onFocusEvent(2)"/>
+      <input id="codeBox3" type="number" maxlength="1" onkeyup="onKeyUpEvent(3, event)" onfocus="onFocusEvent(3)"/>
+      <input id="codeBox4" type="number" maxlength="1" onkeyup="onKeyUpEvent(4, event)" onfocus="onFocusEvent(4)"/>
+      <input id="codeBox5" type="number" maxlength="1" onkeyup="onKeyUpEvent(5, event)" onfocus="onFocusEvent(5)"/>
+      <input id="codeBox6" type="number" maxlength="1" onkeyup="onKeyUpEvent(6, event)" onfocus="onFocusEvent(6)"/>
+      <input id="codeBox7" type="number" maxlength="1" onkeyup="onKeyUpEvent(7, event)" onfocus="onFocusEvent(7)"/>
+      <input id="codeBox8" type="number" maxlength="1" onkeyup="onKeyUpEvent(8, event)" onfocus="onFocusEvent(8)"/>
+      <input id="codeBox9" type="number" maxlength="1" onkeyup="onKeyUpEvent(9, event)" onfocus="onFocusEvent(9)"/>
+      <input id="codeBox10" type="number" maxlength="1" onkeyup="onKeyUpEvent(10, event)" onfocus="onFocusEvent(10)"/>            
+    </div>
+        <h2>ADDRESS :-</h2>
+       <input id="address-line1" name="address-line1" type="text" placeholder="ADDRESS LINE 1">
+        <p id="help-block">Street address, P.O. box, company name, c/o</p>
+        <input id="address-line2" name="address-line2" type="text" placeholder="ADDRESS LINE 2">
+        <p id="help-block">Apartment, suite , unit, building, floor, etc.</p>
+    
+<!-- city input-->
+        <input id="city" name="city" type="text" placeholder="CITY" class="input-xlarge">
+    
+<!-- region input-->
+        <input id="region" name="region" type="text" placeholder="state / province / region">
+        
+<!-- country select -->
+ <select id="country" name="country" class="input-xlarge">
+ <option value="" selected="selected">(please select a country)</option>
+ <option value="AF">Afghanistan</option>
+    <option value="AL">Albania</option>
+    <option value="DZ">Algeria</option>
+    <option value="AS">American Samoa</option>
+    <option value="AD">Andorra</option>
+    <option value="AO">Angola</option>
+    <option value="AI">Anguilla</option>
+
+    <option value="AU">Australia</option>
+    <option value="AT">Austria</option>
+    <option value="AZ">Azerbaijan</option>
+    <option value="BS">Bahamas</option>
+    <option value="BH">Bahrain</option>
+    <option value="BD">Bangladesh</option>
+    <option value="BR">Brazil</option>
+    <option value="KH">Cambodia</option>
+    <option value="CO">Colombia</option>
+    <option value="KM">Comoros</option>
+    <option value="CG">Congo</option>
+
+    <option value="FR">France</option>
+
+
+    <option value="IS">Iceland</option>
+    <option value="IN">India</option>
+    <option value="ID">Indonesia</option>
+    <option value="IR">Iran (Islamic Republic of)</option>
+    <option value="IQ">Iraq</option>
+    <option value="IE">Ireland</option>
+    <option value="IL">Israel</option>
+    <option value="IT">Italy</option>
+    <option value="JM">Jamaica</option>
+    <option value="JP">Japan</option>
+    <option value="MY">Malaysia</option>
+    <option value="MV">Maldives</option>
+    <option value="NC">New Caledonia</option>
+    <option value="NZ">New Zealand</option>
+    <option value="PK">Pakistan</option>
+    <option value="CH">Switzerland</option>
+<!-- postal-code input-->
+<br>
+<input type="radio" name="" value=""><br>
+<br>
+    <input id="postal-code" name="postal-code" type="text" placeholder="zip or postal code">
+
+<br>
+<h2>Trainer's Preference :-</h2>
+<div id="train">
+    <input type="radio" name="package" id="myRadio" value="Male">Male Preference<br>
+    <input type="radio" name="package" id="myRadio" value="Female">Female Preference<br>
+    <input type="radio" name="package" id="myRadio" value="NoPre">No Preference<br>
+    <input type="radio" name="package" id="myRadio" value="other1" > Trainer's Name
+    <input style="display:none;" type="text" name="otherAnswer1" id="otherAnswer1"/><br>
+    <input type="radio" name="package" id="myRadio" value="other" > other
+    <input style="display:none;" type="text" name="otherAnswer" id="otherAnswer"/><br>
+    <p id="demo"></p>
+</div>
+    <h2>Do you need Physiotherepist?</h2>
+    <input type="radio" name="package2" value="">Yes
+    <input type="radio" name="package2" value="">No
+<table>
+<tr>
+    <th>DAY</th>
+    <th>7 to 9 am</th>
+    <th>9 to 11 am</th>
+    <th>11 to 1 pm</th>
+    <th>1 to 3 pm</th>
+    <th>3 to 5 pm</th>
+</tr>
+<tr>
+    <td>Monday</td>
+    <td><input type="radio" name="row-1" data-col="7 to 9 am"></td>
+    <td><input type="radio" name="row-1" data-col="9 to 11 am"></td>
+    <td><input type="radio" name="row-1" data-col="11 to 1 pm"></td>
+    <td><input type="radio" name="row-1" data-col="1 to 3 pm"></td>
+    <td><input type="radio" name="row-1" data-col="3 to 5 pm"></td>
+</tr>
+<tr>
+    <td>Tuesday</td>
+    <td><input type="radio" name="row-2" data-col="7 to 9 am"></td>
+    <td><input type="radio" name="row-2" data-col="9 to 11 am"></td>
+    <td><input type="radio" name="row-2" data-col="11 to 1 pm"></td>
+    <td><input type="radio" name="row-2" data-col="1 to 3 pm"></td>
+    <td><input type="radio" name="row-2" data-col="3 to 5 pm"></td>
+</tr>
+<tr>
+    <td>Wednesday</td>
+    <td><input type="radio" name="row-3" data-col="7 to 9 am"></td>
+    <td><input type="radio" name="row-3" data-col="9 to 11 am"></td>
+    <td><input type="radio" name="row-3" data-col="11 to 1 pm"></td>
+    <td><input type="radio" name="row-3" data-col="1 to 3 pm"></td>
+    <td><input type="radio" name="row-3" data-col="3 to 5 pm"></td>
+</tr>
+<tr>
+    <td>Thursday</td>
+    <td><input type="radio" name="row-4" data-col="7 to 9 am"></td>
+    <td><input type="radio" name="row-4" data-col="9 to 11 am"></td>
+    <td><input type="radio" name="row-4" data-col="11 to 1 pm"></td>
+    <td><input type="radio" name="row-4" data-col="1 to 3 pm"></td>
+    <td><input type="radio" name="row-4" data-col="3 to 5 pm"></td>
+</tr>
+<tr>
+    <td>Friday</td>
+    <td><input type="radio" name="row-5" data-col="7 to 9 am"></td>
+    <td><input type="radio" name="row-5" data-col="9 to 11 am"></td>
+    <td><input type="radio" name="row-5" data-col="11 to 1 pm"></td>
+    <td><input type="radio" name="row-5" data-col="1 to 3 pm"></td>
+    <td><input type="radio" name="row-5" data-col="3 to 5 pm"></td>
+</tr>
+<tr>
+    <td>Saturday</td>
+    <td><input type="radio" name="row-6" data-col="7 to 9 am"></td>
+    <td><input type="radio" name="row-6" data-col="9 to 11 am"></td>
+    <td><input type="radio" name="row-6" data-col="11 to 1 pm"></td>
+    <td><input type="radio" name="row-6" data-col="1 to 3 pm"></td>
+    <td><input type="radio" name="row-6" data-col="3 to 5 pm"></td>
+</tr>
+<tr>
+    <td>Sunday</td>
+    <td><input type="radio" name="row-7" data-col="7 to 9 am"></td>
+    <td><input type="radio" name="row-7" data-col="9 to 11 am"></td>
+    <td><input type="radio" name="row-7" data-col="11 to 1 pm"></td>
+    <td><input type="radio" name="row-7" data-col="1 to 3 pm"></td>
+    <td><input type="radio" name="row-7" data-col="3 to 5 pm"></td>
+</tr>
+</table>
+<h2>Select a package :-</h2>
+  <input type="radio" name="package6" id="myRadio1" value="400"> One time assesment only(INR 500)<br>
+  <input type="radio" name="package6" id="myRadio1" value="1,600">Four weekly sessions(INR 400/session)<br>
+  <input type="radio" name="package6" id="myRadio1" value="3,600">Twelve weekly sessions(INR 300/session)<br>
+   <input type="radio" name="package6" id="myRadio1" value="other" > other 
+   <p id="demo9"></p>
+  <input style="display:none;" type="text" name="otherAnswer" id="otherAnswer"/>
+
+
+<h2>Total Amount :-</h2>
+<input type="number" size="2">:
+<input type="number" size="2"><br>
+ 
+<br>
+<input type="button" value="OK" onclick="myFun()"/>
+</form>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
